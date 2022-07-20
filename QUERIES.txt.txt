@@ -1,0 +1,19 @@
+QUESTION:QUERIES
+
+1.sqlite> SELECT student_name FROM students JOIN relating JOIN groups 
+ON groups.group_id = relating.group_id AND relating.student_id = students.student_id
+ WHERE group_name LIKE "%Lion%";
+
+2.sqlite> SELECT student_name,group_name FROM students JOIN relating 
+JOIN groups ON groups.group_id = relating.group_id AND relating.student_id = 
+students.student_id;
+
+3.sqlite> SELECT marks FROM marks WHERE mark_id IN
+(SELECT mark_id FROM relating WHERE student_id IN
+(SELECT student_id FROM students));
+
+
+4.sqlite> SELECT COUNT (DISTINCT(first_name)) FROM teachers;
+
+
+5.sqlite> SELECT * FROM students;

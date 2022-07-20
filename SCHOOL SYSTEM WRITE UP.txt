@@ -1,0 +1,10 @@
+
+My project is a school management system where students are taught by teachers and are distributed in differnt groups according to subject taught.
+My project has five tables which are:
+   > Marks with mark_id,student-id,subject_id,date,mark as attributes.
+   >Students with student_id,student_name,group_id as attributes.
+   >Groups with group_id,name as attributes.
+   >Subjects subject_id,title as attributes.
+   >Teachers teacher_id,first_name,last_name as attributes
+
+And my Relating table taht shows the relationship between the five tables and it contains all the id's for all the five tables.
